@@ -504,6 +504,10 @@ app.get("/api/settings", handleGetSettings);
 app.put("/api/settings", handleUpdateSettings);
 app.post("/api/settings", handleUpdateSettings);
 
-app.listen(PORT, () => {
-  console.log(`MarketPulse Express API Backend running at http://localhost:${PORT}`);
-});
+if (!process.env.VERCEL && process.env.NODE_ENV !== "production") {
+  app.listen(PORT, () => {
+    console.log(`MarketPulse Express API Backend running at http://localhost:${PORT}`);
+  });
+}
+
+export default app;
