@@ -1,0 +1,10 @@
+{
+  "description": "Intelligent stock watchlist highlighting meaningful market changes with clear insights and attention scores to help investors focus on what matters most.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
